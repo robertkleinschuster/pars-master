@@ -1,0 +1,49 @@
+{
+    "name": "pars/pars-{component}",
+    "description": "",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "pars"
+    ],
+    "support": {
+        "docs": "https://docs.parsphp.org/pars-{component}/",
+        "issues": "https://github.com/pars/pars-{component}/issues",
+        "source": "https://github.com/pars/pars-{component}",
+        "rss": "https://github.com/pars/pars-{component}/releases.atom",
+        "forum": "https://discourse.parsphp.org/"
+    },
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5 || ^8.1",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pars\\{component-namespace}\\": "src//"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ParsTest\\{component-namespace}\\": "test/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laminas": {
+            "module": "Pars\\{component-namespace}"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    }
+}

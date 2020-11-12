@@ -1,0 +1,6 @@
+/.phpunit.result.cache
+/composer.lock
+/docs/html/
+/pars-mkdoc-theme.tgz
+/pars-mkdoc-theme/
+/vendor/

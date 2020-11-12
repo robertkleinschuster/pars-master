@@ -1,0 +1,3 @@
+# pars-{component}
+
+This component provides ...
