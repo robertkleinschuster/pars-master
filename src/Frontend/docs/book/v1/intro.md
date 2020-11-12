@@ -1,0 +1,3 @@
+# pars-frontend
+
+This component provides ...

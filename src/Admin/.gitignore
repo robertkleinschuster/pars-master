@@ -4,7 +4,3 @@
 /pars-mkdoc-theme.tgz
 /pars-mkdoc-theme/
 /vendor/
-/.phpcs-cache
-/clover.xml
-/coveralls-upload.json
-/phpunit.xml

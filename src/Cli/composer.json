@@ -1,0 +1,49 @@
+{
+    "name": "pars/pars-cli",
+    "description": "",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "pars"
+    ],
+    "support": {
+        "docs": "https://docs.parsphp.org/pars-cli/",
+        "issues": "https://github.com/pars/pars-cli/issues",
+        "source": "https://github.com/pars/pars-cli",
+        "rss": "https://github.com/pars/pars-cli/releases.atom",
+        "forum": "https://discourse.parsphp.org/"
+    },
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "../../vendor/phpunit/phpunit": "^7.5 || ^8.1",
+        "../../vendor/squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pars\\Cli\\": "src//"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ParsTest\\Cli\\": "test/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laminas": {
+            "module": "Pars\\Cli"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs-check": "../../vendor/bin/phpcs",
+        "cs-fix": "../../vendor/bin/phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    }
+}
