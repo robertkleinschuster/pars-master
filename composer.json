@@ -1,15 +1,15 @@
 {
-    "name": "pars/pars-{component}",
+    "name": "pars/pars-master",
     "description": "",
     "license": "BSD-3-Clause",
     "keywords": [
         "pars"
     ],
     "support": {
-        "docs": "https://docs.parsphp.org/pars-{component}/",
-        "issues": "https://github.com/pars/pars-{component}/issues",
-        "source": "https://github.com/pars/pars-{component}",
-        "rss": "https://github.com/pars/pars-{component}/releases.atom",
+        "docs": "https://docs.parsphp.org/pars-master/",
+        "issues": "https://github.com/pars/pars-master/issues",
+        "source": "https://github.com/pars/pars-master",
+        "rss": "https://github.com/pars/pars-master/releases.atom",
         "forum": "https://discourse.parsphp.org/"
     },
     "require": {
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pars\\{component-namespace}\\": "src//"
+            "Pars\\Master\\": "src//"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ParsTest\\{component-namespace}\\": "test/"
+            "ParsTest\\Master\\": "test/"
         }
     },
     "extra": {
@@ -34,7 +34,7 @@
             "dev-master": "1.0.x-dev"
         },
         "laminas": {
-            "module": "Pars\\{component-namespace}"
+            "module": "Pars\\Master"
         }
     },
     "config": {
