@@ -1,24 +1,24 @@
-[submodule "pars-core"]
+[submodule "src/Core"]
 	path = src/Core
 	url = https://github.com/robertkleinschuster/pars-core.git
-[submodule "pars-admin"]
-	path = src/Admin
-	url = https://github.com/robertkleinschuster/pars-admin.git
-[submodule "pars-cli"]
-	path = src/Cli
-	url = https://github.com/robertkleinschuster/pars-cli.git
-[submodule "pars-components"]
-	path = src/Component
-	url = https://github.com/robertkleinschuster/pars-components.git
-[submodule "pars-frontend"]
-	path = src/Frontend
-	url = https://github.com/robertkleinschuster/pars-frontend.git
-[submodule "pars-helpers"]
+[submodule "src/Helper"]
 	path = src/Helper
 	url = https://github.com/robertkleinschuster/pars-helpers.git
-[submodule "pars-models"]
-	path = src/Model
-	url = https://github.com/robertkleinschuster/pars-models.git
-[submodule "pars-mvc"]
+[submodule "src/Component"]
+	path = src/Component
+	url = https://github.com/robertkleinschuster/pars-components.git
+[submodule "src/Mvc"]
 	path = src/Mvc
 	url = https://github.com/robertkleinschuster/pars-mvc.git
+[submodule "src/Admin"]
+	path = src/Admin
+	url = https://github.com/robertkleinschuster/pars-admin.git
+[submodule "src/Cli"]
+	path = src/Cli
+	url = https://github.com/robertkleinschuster/pars-cli.git
+[submodule "src/Frontend"]
+	path = src/Frontend
+	url = https://github.com/robertkleinschuster/pars-frontend.git
+[submodule "src/Model"]
+	path = src/Model
+	url = https://github.com/robertkleinschuster/pars-models.git
