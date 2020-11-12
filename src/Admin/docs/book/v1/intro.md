@@ -1,3 +1,0 @@
-# pars-admin
-
-This component provides ...
