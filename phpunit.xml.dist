@@ -7,6 +7,30 @@
         <testsuite name="Pars master Tests">
             <directory>./test</directory>
         </testsuite>
+        <testsuite name="Pars admin Tests">
+            <directory>./src/Admin/test</directory>
+        </testsuite>
+        <testsuite name="Pars cli Tests">
+            <directory>./src/Cli/test</directory>
+        </testsuite>
+        <testsuite name="Pars component Tests">
+            <directory>./src/Component/test</directory>
+        </testsuite>
+        <testsuite name="Pars core Tests">
+            <directory>./src/Core/test</directory>
+        </testsuite>
+        <testsuite name="Pars frontend Tests">
+            <directory>./src/Frontent/test</directory>
+        </testsuite>
+        <testsuite name="Pars helper Tests">
+            <directory>./src/Helper/test</directory>
+        </testsuite>
+        <testsuite name="Pars model Tests">
+            <directory>./src/Model/test</directory>
+        </testsuite>
+        <testsuite name="Pars mvc Tests">
+            <directory>./src/Mvc/test</directory>
+        </testsuite>
     </testsuites>
 
     <filter>

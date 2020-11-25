@@ -21,8 +21,8 @@ use Psr\Container\ContainerInterface;
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
     // The error handler should be the first (most outer) middleware to catch
     // all Exceptions.
-    $app->pipe(ErrorHandler::class);
-    $app->pipe(ServerUrlMiddleware::class);
+    # $app->pipe(ErrorHandler::class);
+    # $app->pipe(ServerUrlMiddleware::class);
 
     // Pipe more middleware here that you want to execute on every request:
     // - bootstrapping
@@ -44,7 +44,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
 
     // Register the routing middleware in the middleware pipeline.
     // This middleware registers the Mezzio\Router\RouteResult request attribute.
-    $app->pipe(RouteMiddleware::class);
+   # $app->pipe(RouteMiddleware::class);
 
     // The following handle routing failures for common conditions:
     // - HEAD request but no routes answer that method
@@ -52,12 +52,12 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     // - method not allowed
     // Order here matters; the MethodNotAllowedMiddleware should be placed
     // after the Implicit*Middleware.
-    $app->pipe(ImplicitHeadMiddleware::class);
-    $app->pipe(ImplicitOptionsMiddleware::class);
-    $app->pipe(MethodNotAllowedMiddleware::class);
+   # $app->pipe(ImplicitHeadMiddleware::class);
+   # $app->pipe(ImplicitOptionsMiddleware::class);
+   # $app->pipe(MethodNotAllowedMiddleware::class);
 
     // Seed the UrlHelper with the routing results:
-    $app->pipe(UrlHelperMiddleware::class);
+   # $app->pipe(UrlHelperMiddleware::class);
 
     // Add more middleware here that needs to introspect the routing results; this
     // might include:
@@ -65,12 +65,15 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     // - route-based authentication
     // - route-based validation
     // - etc.
+    $backoffice = $container->get(\Pars\Admin\ApplicationContainer::class);
+    $app->pipe($backoffice->get(\Mezzio\Application::class));
+    #$app->pipe(new \Pars\Helper\Path\BasePathMiddlewareDecorator('/backoffice', $backoffice->get(\Mezzio\Application::class), $backoffice->get(\Mezzio\Helper\UrlHelper::class)));
 
     // Register the dispatch middleware in the middleware pipeline
-    $app->pipe(DispatchMiddleware::class);
+    #$app->pipe(DispatchMiddleware::class);
 
     // At this point, if no Response is returned by any middleware, the
     // NotFoundHandler kicks in; alternately, you can provide other fallback
     // middleware to execute.
-    $app->pipe(NotFoundHandler::class);
+    # $app->pipe(NotFoundHandler::class);
 };
