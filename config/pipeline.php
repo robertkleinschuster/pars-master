@@ -66,9 +66,8 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     // - route-based validation
     // - etc.
     $backoffice = $container->get(\Pars\Admin\ApplicationContainer::class);
-    $app->pipe($backoffice->get(\Mezzio\Application::class));
-    #$app->pipe(new \Pars\Helper\Path\BasePathMiddlewareDecorator('/backoffice', $backoffice->get(\Mezzio\Application::class), $backoffice->get(\Mezzio\Helper\UrlHelper::class)));
-
+    $app->pipe(new \Pars\Helper\Path\BasePathMiddlewareDecorator('/pars', $backoffice->get(\Mezzio\Application::class), $backoffice->get(\Mezzio\Helper\UrlHelper::class)));
+    
     // Register the dispatch middleware in the middleware pipeline
     #$app->pipe(DispatchMiddleware::class);
 
