@@ -69,12 +69,12 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
 
     $admin = $container->get(\Pars\Admin\ApplicationContainer::class);
     $app->pipe(
-        new \Pars\Helper\Path\BasePathMiddlewareDecorator(
-            '/pars',
-            $admin->get(\Mezzio\Application::class),
-            $admin->get(\Mezzio\Helper\UrlHelper::class)
+        new \Pars\Helper\Path\SubDomainMiddlewareDecorator(
+            'admin',
+            $admin->get(\Mezzio\Application::class)
         )
     );
+
 
     $frontend = $container->get(\Pars\Frontend\ApplicationContainer::class);
     $app->pipe($frontend->get(\Mezzio\Application::class));
