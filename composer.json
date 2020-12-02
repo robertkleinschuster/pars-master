@@ -83,7 +83,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "latest"
         },
         "laminas": {
             "module": "Pars\\Master",
