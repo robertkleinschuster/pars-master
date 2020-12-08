@@ -22,3 +22,6 @@
 [submodule "src/Model"]
 	path = src/Model
 	url = https://github.com/robertkleinschuster/pars-models.git
+[submodule "src/Import"]
+	path = src/Import
+	url = https://github.com/robertkleinschuster/pars-import.git
