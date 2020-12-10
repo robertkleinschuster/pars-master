@@ -8,6 +8,7 @@
     <mapping directory="$PROJECT_DIR$/src/Core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Frontend" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Helper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Import" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Model" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Mvc" vcs="Git" />
   </component>
