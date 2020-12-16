@@ -36,6 +36,7 @@
         "laminas/laminas-zendframework-bridge": "^1.0",
         "league/flysystem": "^1.1",
         "league/glide": "^1.6",
+        "league/oauth2-client": "^2.6",
         "mezzio/mezzio": "^3.2.1",
         "mezzio/mezzio-authentication": "^1.1",
         "mezzio/mezzio-authentication-session": "^1.0",
