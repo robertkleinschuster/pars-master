@@ -52,6 +52,10 @@ Setup a MariaDB database and user and then open admin.localhost:8080 in a browse
 To setup the database you can use MySQL workbench https://www.mysql.com/products/workbench/, command line interface or any other MySQL client.
 Done. Now open the project in your favourite editor and start developemnt.
 
+Frontend should be available at [localhost:8080](localhost:8080)
+
+Admin should be available at [admin.localhost:8080](admin.localhost:8080)
+
 ## Documentation
 work in progress
 Browse the documentation online at https://docs.parsphp.org/pars-master/
