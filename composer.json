@@ -37,7 +37,6 @@
     "laminas/laminas-serializer": "^2.9",
     "laminas/laminas-servicemanager": "^3.4",
     "laminas/laminas-stdlib": "^3.2.1",
-    "laminas/laminas-zendframework-bridge": "^1.0",
     "league/flysystem": "^1.1",
     "league/glide": "^1.6",
     "league/oauth2-client": "^2.6",
