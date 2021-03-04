@@ -17,17 +17,17 @@ $ git submodule update
 $ git submodule foreach --recursive git checkout master
 ```
 
-Install PHP 7.4 for MacOS
+Install PHP 7.4 for macOS
 ```bash
 $ brew install php@7.4
 ```
 
-Install composer for MacOS
+Install composer for macOS
 ```bash
 $ brew install composer
 ```
 
-Install maria db for MacOS
+Install maria db for macOS
 ```bash
 $ brew install mariadb
 ```
