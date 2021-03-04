@@ -46,6 +46,8 @@ $aggregator = new ConfigAggregator([
     // Default App module config
     \Pars\Admin\ConfigProvider::class,
     \Pars\Frontend\ConfigProvider::class,
+    \Pars\Api\ConfigProvider::class,
+
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
     //   - `global.php`

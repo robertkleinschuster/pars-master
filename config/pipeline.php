@@ -68,6 +68,13 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
         )
     );
 
+    $admin = $container->get(\Pars\Api\ApplicationContainer::class);
+    $app->pipe(
+        new \Pars\Helper\Path\SubDomainMiddlewareDecorator(
+            'api',
+            $admin->get(\Mezzio\Application::class)
+        )
+    );
 
     $frontend = $container->get(\Pars\Frontend\ApplicationContainer::class);
     $app->pipe($frontend->get(\Mezzio\Application::class));

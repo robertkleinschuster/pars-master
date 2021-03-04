@@ -20,10 +20,15 @@ if (file_exists(__DIR__ . '/../src/Frontend/data/cache/config/config.php')) {
     unlink(__DIR__ . '/../src/Frontend/data/cache/config/config.php');
 }
 
+if (file_exists(__DIR__ . '/../src/Api/data/cache/config/config.php')) {
+    unlink(__DIR__ . '/../src/Api/data/cache/config/config.php');
+}
+
 
 $command = new \Pars\Cli\DevCommand();
 echo($command(array_slice($argv, 1), __DIR__ . '/../src/Admin'));
 echo($command(array_slice($argv, 1), __DIR__ . '/../src/Frontend'));
+echo($command(array_slice($argv, 1), __DIR__ . '/../src/Api'));
 $command = new \Laminas\DevelopmentMode\Command();
 echo($command(array_slice($argv, 1)));
 exit;
