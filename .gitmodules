@@ -25,3 +25,6 @@
 [submodule "src/Import"]
 	path = src/Import
 	url = https://github.com/robertkleinschuster/pars-import.git
+[submodule "src/Api"]
+	path = src/Api
+	url = https://github.com/robertkleinschuster/pars-api.git

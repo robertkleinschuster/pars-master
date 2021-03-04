@@ -77,7 +77,8 @@
       "Pars\\Helper\\": "src/Helper/src/",
       "Pars\\Import\\": "src/Import/src/",
       "Pars\\Model\\": "src/Model/src/",
-      "Pars\\Mvc\\": "src/Mvc/src/"
+      "Pars\\Mvc\\": "src/Mvc/src/",
+      "Pars\\Api\\": "src/Api/src/"
     }
   },
   "autoload-dev": {
@@ -90,7 +91,8 @@
       "ParsTest\\Helper\\": "src/Helper/test/",
       "ParsTest\\Import\\": "src/Import/test/",
       "ParsTest\\Model\\": "src/Model/test/",
-      "ParsTest\\Mvc\\": "src/Mvc/test/"
+      "ParsTest\\Mvc\\": "src/Mvc/test/",
+      "ParsTest\\Api\\": "src/Api/test/"
     }
   },
   "extra": {
