@@ -14,6 +14,7 @@
   },
   "require": {
     "php": "^7.4",
+    "ext-dom": "*",
     "ext-gd": "*",
     "ext-intl": "*",
     "ext-json": "*",
@@ -37,6 +38,7 @@
     "laminas/laminas-serializer": "^2.9",
     "laminas/laminas-servicemanager": "^3.4",
     "laminas/laminas-stdlib": "^3.2.1",
+    "lcobucci/jwt": "^4.1",
     "league/flysystem": "^1.1",
     "league/glide": "^1.6",
     "league/oauth2-client": "^2.6",
