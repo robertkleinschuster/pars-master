@@ -10,9 +10,12 @@ use Laminas\ConfigAggregator\PhpFileProvider;
 // `config/autoload/local.php`.
 $cacheConfig = [
     'config_cache_path' => 'data/cache/config-cache.php',
+    'master-app' => true
 ];
 
 $aggregator = new ConfigAggregator([
+    \Laminas\Mail\ConfigProvider::class,
+    \Laminas\Validator\ConfigProvider::class,
     \Mezzio\Session\Cache\ConfigProvider::class,
     \Mezzio\Flash\ConfigProvider::class,
     \Mezzio\Csrf\ConfigProvider::class,
