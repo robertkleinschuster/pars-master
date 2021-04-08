@@ -28,3 +28,9 @@
 [submodule "src/Api"]
 	path = src/Api
 	url = https://github.com/robertkleinschuster/pars-api.git
+[submodule "src/Pattern"]
+	path = src/Pattern
+	url = https://github.com/PARS-Framework/pars-patterns.git
+[submodule "src/Bean"]
+	path = src/Bean
+	url = https://github.com/PARS-Framework/pars-beans.git
