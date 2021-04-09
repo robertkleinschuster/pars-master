@@ -1,7 +1,7 @@
 # pars-master
 
-[![Build Status](https://travis-ci.com/pars/pars-master.svg?branch=master)](https://travis-ci.com/pars/pars-master)
-[![Coverage Status](https://coveralls.io/repos/github/pars/pars-master/badge.svg?branch=master)](https://coveralls.io/github/pars/pars-master?branch=master)
+[![Build Status](https://travis-ci.com/pars-framework/pars-master.svg?branch=master)](https://travis-ci.com/pars-framework/pars-master)
+[![Coverage Status](https://coveralls.io/repos/github/pars-framework/pars-master/badge.svg?branch=master)](https://coveralls.io/github/pars-framework/pars-master?branch=master)
 
 PARS Master is primarily used for development and testing of the PARS Framework and CMS.
 It combines all modules in one project for development.
