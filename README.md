@@ -22,7 +22,7 @@ Install PHP 7.4 and composer
 Ubuntu 20.04:
 ```bash
 $ sudo apt update
-$ sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+$ sudo apt install php php-cli php-fpm php-json php-common php-mysql php-pdo-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
 $ curl -sS https://getcomposer.org/installer -o composer-setup.php
 $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
