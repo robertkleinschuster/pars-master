@@ -10,7 +10,7 @@ It combines all modules in one project for development.
 
 Clone this repository:
 ```bash
-$ git clone https://github.com/robertkleinschuster/pars-master.git
+$ git clone https://github.com/pars-framework/pars-master.git
 $ cd pars-master
 $ git submodule init
 $ git submodule update
@@ -59,6 +59,23 @@ Admin should be available at [admin.localhost:8080](admin.localhost:8080)
 ## Documentation
 work in progress
 Browse the documentation online at https://docs.parsphp.org/pars-master/
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you
+would like to change.
+
+In general, we follow the "fork-and-pull" Git workflow:
+1. Fork the repo on GitHub
+2. Clone the project to your own machine
+3. Commit changes to your own branch
+4. Push your work back up to your fork
+5. Submit a Pull request so that we can review your changes
+
+Please refer to the project's guidelines for submitting patches and additions and make sure
+to update tests as appropriate.
+
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 ## Support
 work in progress
