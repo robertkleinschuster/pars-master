@@ -46,6 +46,10 @@ $ sudo nano /etc/hosts
 ```
 ```
 127.0.0.1       admin.localhost
+127.0.0.1       api.localhost
+127.0.0.1       localhost.com
+127.0.0.1       localhost.de
+127.0.0.1       localhost.at
 ```
 
 Setup a MariaDB database and user and then open admin.localhost:8080 in a browser and enter db config.
