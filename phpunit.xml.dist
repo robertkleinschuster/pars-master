@@ -25,17 +25,26 @@
         <testsuite name="Pars helper Tests">
             <directory>./src/Helper/test</directory>
         </testsuite>
+        <testsuite name="Pars import Tests">
+            <directory>./src/Import/test</directory>
+        </testsuite>
         <testsuite name="Pars model Tests">
             <directory>./src/Model/test</directory>
         </testsuite>
         <testsuite name="Pars mvc Tests">
             <directory>./src/Mvc/test</directory>
         </testsuite>
+        <testsuite name="Pars bean Tests">
+            <directory>./src/Bean/test</directory>
+        </testsuite>
+        <testsuite name="Pars pattern Tests">
+            <directory>./src/Pattern/test</directory>
+        </testsuite>
     </testsuites>
 
-    <coverage>
-        <whitelist processUncoveredFiles="true">
+    <coverage processUncoveredFiles="true">
+        <include>
             <directory suffix=".php">./src</directory>
-        </whitelist>
+        </include>
     </coverage>
 </phpunit>
