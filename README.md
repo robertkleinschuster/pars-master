@@ -17,20 +17,23 @@ $ git submodule update
 $ git submodule foreach --recursive git checkout master
 ```
 
-Install PHP 7.4 for macOS
+Install PHP 7.4 and composer
+
+Ubuntu 20.04:
 ```bash
-$ brew install php@7.4
+$ sudo apt update
+$ sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+$ curl -sS https://getcomposer.org/installer -o composer-setup.php
+$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
-Install composer for macOS
+macOS:
 ```bash
+$ brew install php@7.4
 $ brew install composer
 ```
 
-Install maria db for macOS
-```bash
-$ brew install mariadb
-```
+Moreover you need to setup MariaDB.
 
 Install project dependencies
 ```bash
