@@ -72,6 +72,10 @@
     "serve": "php -S 0.0.0.0:8080 -t public/",
     "master-development-disable": "php bin/master-development-mode.php disable",
     "master-development-enable": "php bin/master-development-mode.php enable",
-    "master-development-status": "php bin/master-development-mode.php status"
+    "master-development-status": "php bin/master-development-mode.php status",
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
   }
 }

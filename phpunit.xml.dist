@@ -20,7 +20,7 @@
             <directory>./src/Core/test</directory>
         </testsuite>
         <testsuite name="Pars frontend Tests">
-            <directory>./src/Frontent/test</directory>
+            <directory>./src/Frontend/test</directory>
         </testsuite>
         <testsuite name="Pars helper Tests">
             <directory>./src/Helper/test</directory>
