@@ -10,7 +10,7 @@ It combines all modules in one project for development.
 
 Clone this repository:
 ```bash
-$ git clone https://github.com/robertkleinschuster/pars-master.git
+$ git clone https://github.com/pars-framework/pars-master.git
 $ cd pars-master
 $ git submodule init
 $ git submodule update
