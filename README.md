@@ -64,6 +64,12 @@ Frontend should be available at [localhost:8080](localhost:8080)
 Admin should be available at [admin.localhost:8080](admin.localhost:8080)
 
 ## Documentation
+
+Package Dependency Guid
+This defines what package can use classes from what other packages.
+
+![](image:https://raw.githubusercontent.com/PARS-Framework/pars-master/master/PARS-Package-Dependencies.png)
+
 work in progress
 Browse the documentation online at https://docs.parsphp.org/pars-master/
 
