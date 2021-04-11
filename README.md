@@ -68,7 +68,7 @@ Admin should be available at [admin.localhost:8080](admin.localhost:8080)
 Package Dependency Guid
 This defines what package can use classes from what other packages.
 
-![](image:https://raw.githubusercontent.com/PARS-Framework/pars-master/master/PARS-Package-Dependencies.png)
+[Diagram](https://github.com/PARS-Framework/pars-master/blob/master/PARS-Package-Dependencies.png)
 
 work in progress
 Browse the documentation online at https://docs.parsphp.org/pars-master/
