@@ -69,7 +69,9 @@
   "config": {
   },
   "scripts": {
-    "serve": "php -S 0.0.0.0:8080 -t public/",
+    "serve": [
+      "php -S 0.0.0.0:8080 -t public/ & yarn encore dev --watch"
+    ],
     "master-development-disable": "php bin/master-development-mode.php disable",
     "master-development-enable": "php bin/master-development-mode.php enable",
     "master-development-status": "php bin/master-development-mode.php status",
