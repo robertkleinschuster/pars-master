@@ -57,7 +57,7 @@ Encore
         config.shippedProposals = true;
     })
     .configureBabel((babelConfig) => {
-
+        babelConfig.presets.push('@babel/preset-flow');
     })
 
 // enables Sass/SCSS support
