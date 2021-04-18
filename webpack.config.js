@@ -25,7 +25,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('component',  './src/Component/bundles/entrypoints/component.js')
-    .addEntry('helper', './src/Helper/bundles/entrypoints/helper.js')
+    .addEntry('mvc', './src/Mvc/bundles/entrypoints/mvc.js')
     //.addEntry('page1', './assets/page1.js')
     //.addEntry('page2', './assets/page2.js')
 
@@ -54,6 +54,10 @@ Encore
         config.useBuiltIns = 'entry';
         config.corejs = 3;
         config.modules = "auto";
+        config.shippedProposals = true;
+    })
+    .configureBabel((babelConfig) => {
+
     })
 
 // enables Sass/SCSS support
@@ -67,7 +71,7 @@ Encore
 //.enableIntegrityHashes(Encore.isProduction())
 
 // uncomment if you're having problems with a jQuery plugin
- .autoProvidejQuery()
+// .autoProvidejQuery()
 
 // uncomment if you use API Platform Admin (composer require api-admin)
 //.enableReactPreset()
