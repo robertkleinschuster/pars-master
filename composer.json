@@ -70,7 +70,7 @@
   },
   "scripts": {
     "serve": [
-      "php -S 0.0.0.0:8080 -t public/ & yarn encore dev --watch"
+      "php -q -S admin.localhost:8080 -t public/ & yarn encore dev --watch & log stream --style syslog --level debug --predicate 'process == \"php\"'"
     ],
     "master-development-disable": "php bin/master-development-mode.php disable",
     "master-development-enable": "php bin/master-development-mode.php enable",
